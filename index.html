@@ -1,0 +1,354 @@
+
+<!doctype html>
+<html lang="hi">
+<head>
+
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1416555243234617');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1416555243234617&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TRADING WITH KAROL</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --accent: #ff6b2d;
+      --muted: #8b98a5;
+      --green: #1bc47d;
+      --blue: #2b9cff;
+      --glass: rgba(255,255,255,0.65);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#e9eef3 0%, #f7fbff 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #21313a;
+    }
+
+    .card {
+      width: 360px;
+      max-width: 100%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,251,253,0.95));
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(17,24,39,0.08);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-top {
+      background: linear-gradient(180deg,#1f3b49 0%, #2b4a57 70%);
+      padding: 22px 18px 56px 18px;
+      color: #fff;
+      position: relative;
+      text-align: center;
+    }
+
+    /* Logo center with verified below */
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid rgba(255,255,255,0.08);
+      box-shadow: 0 6px 20px rgba(27,36,45,0.18);
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .verified .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2b9cff;
+      box-shadow: 0 0 8px rgba(43,156,255,0.35);
+    }
+
+    .title {
+      margin-top: 12px;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+    }
+
+    .subtag {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 8px;
+      background: rgba(255,255,255,0.06);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.95);
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .stats {
+      position: relative;
+      top: -28px;
+      padding: 0 18px 18px 18px;
+    }
+
+    .stat-grid {
+      display: flex;
+      gap: 12px;
+      background: var(--card);
+      padding: 14px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .stat {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 800;
+      color: #2b3a3f;
+    }
+
+    .stat p {
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .stat.middle {
+      border-left: 1px solid #eef3f6;
+      border-right: 1px solid #eef3f6;
+      padding: 0 12px;
+    }
+
+    .features {
+      margin-top: 14px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .feature {
+      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 6px 12px rgba(17,24,39,0.03);
+    }
+
+    .feature .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg,#f2f6fb,#ffffff);
+      font-weight: 700;
+      color: #2b3a3f;
+      border: 1px solid rgba(17,24,39,0.03);
+      flex-shrink: 0;
+    }
+
+    .feature .meta h4 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .feature .meta p {
+      margin: 4px 0 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .cta-wrap {
+      padding: 18px;
+    }
+
+    .cta {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(90deg, var(--accent), #ff824b);
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(255,107,45,0.18);
+      text-decoration: none;
+    }
+
+    .cta .tg {
+      width: 18px;
+      height: 18px;
+      background: rgba(255,255,255,0.15);
+      display: inline-grid;
+      place-items: center;
+      border-radius: 6px;
+    }
+
+    .legal {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 12px 18px 20px;
+    }
+
+    .legal a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+
+    @media (max-width:420px) {
+      .card { width: 92%; }
+      .title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" role="region" aria-label="Raja Tennis card">
+    <div class="card-top">
+      <div class="logo-wrap">
+        <div class="logo" aria-hidden="true">
+          <img alt="logo" src="image.png" 
+               onerror="this.style.opacity=.06; this.style.background='linear-gradient(45deg,#2b9cff,#1bc47d)';" />
+        </div>
+        <div class="verified" title="Verified">
+          <span class="dot" aria-hidden="true"></span>
+          VERIFIED
+        </div>
+      </div>
+
+      <div class="title">TRADING WITH KAROL</div>
+      <div class="subtag">ATP &amp; WTA LIVE</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-grid" role="group" aria-label="stats">
+        <div class="stat">
+          <h3 style="color:#ff5b4d">90%</h3>
+          <p>ACCURACY</p>
+        </div>
+        <div class="stat middle">
+          <h3>50K+</h3>
+          <p>MEMBERS</p>
+        </div>
+        <div class="stat">
+          <h3 style="color:#1bb57a">Free</h3>
+          <p>DAILY TIPS</p>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="icon">▶</div>
+          <div class="meta">
+            <h4>Market Insights & Discussions</h4>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🏆</div>
+          <div class="meta">
+            <h4>Learn with Experts</h4>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🛡️</div>
+          <div class="meta">
+            <h4>Practical Strategies</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-wrap">
+      <a href="https://t.me/+_5LpodaULL40MWRl" target="_blank" rel="noopener noreferrer"
+         class="cta" aria-label="Join Telegram Channel Now">
+        <span class="tg" aria-hidden="true">✈</span>
+        JOIN CHANNEL NOW
+      </a>
+    </div>
+
+    <div class="legal">
+      <a href="https://wa.me/+919532473116" target="_blank" rel="noopener noreferrer">
+        ShiviAddAngency
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
